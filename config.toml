@@ -1,0 +1,21 @@
+theme = "nightfox"
+
+[editor]
+line-number = "relative"
+mouse = true
+bufferline = "multiple"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.insert]
+"C-[" = "normal_mode"
+
+[keys.select]
+"C-[" = "normal_mode"
+
+[editor.indent-guides]
+indent-style = 4
+
