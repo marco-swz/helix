@@ -1,0 +1,6 @@
+inherits = "gruvbox_dark_hard"
+"ui.cursor.insert" = { fg="#dbdbdb", modifiers = [] }
+"ui.selection" = { bg = "bg3", modifiers = [] }
+"ui.selection.primary" = { bg = "bg4", modifiers = [] }
+"ui.cursor.primary" = { bg = "#9e9e9e" modifiers = [] }
+
