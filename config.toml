@@ -1,4 +1,4 @@
-theme = "nightfox"
+theme = "gruvbox"
 
 [editor]
 line-number = "relative"
@@ -8,7 +8,7 @@ bufferline = "multiple"
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
-select = "underline"
+select = "block"
 
 [keys.insert]
 "C-[" = "normal_mode"
@@ -17,5 +17,9 @@ select = "underline"
 "C-[" = "normal_mode"
 
 [editor.indent-guides]
+render = true
 indent-style = 4
+
+[editor.file-picker]
+hidden = false
 
