@@ -1,4 +1,4 @@
-theme = "gruvbox"
+theme = "night_owl"
 
 [editor]
 line-number = "relative"
@@ -9,6 +9,14 @@ bufferline = "multiple"
 insert = "bar"
 normal = "block"
 select = "block"
+
+[keys.normal]
+"space" = { f = { h = "symbol_picker" } }
+"space" = { f = { j = "file_picker" } }
+"space" = { f = { k = "diagnostics_picker" } }
+"space" = { f = { b = "command_pallete" } }
+"space" = { f = { y = "buffer_picker" } }
+"space" = { f = { u = "buffer_picker" } }
 
 [keys.insert]
 "C-[" = "normal_mode"
