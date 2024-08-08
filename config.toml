@@ -10,13 +10,12 @@ insert = "bar"
 normal = "block"
 select = "block"
 
-[keys.normal]
-"space" = { f = { h = "symbol_picker" } }
-"space" = { f = { j = "file_picker" } }
-"space" = { f = { k = "diagnostics_picker" } }
-"space" = { f = { b = "command_pallete" } }
-"space" = { f = { y = "buffer_picker" } }
-"space" = { f = { u = "buffer_picker" } }
+[keys.normal.space.f]
+h = "symbol_picker"
+j = "file_picker"
+l = "diagnostics_picker"
+b = "command_palette"
+m = "buffer_picker"
 
 [keys.insert]
 "C-[" = "normal_mode"
