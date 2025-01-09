@@ -18,6 +18,7 @@ select = "block"
 
 [keys.normal]
 "C-l" = "@<A-.>"
+"'" = "save_selection"
 
 [editor.indent-guides]
 render = true
