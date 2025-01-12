@@ -5,3 +5,21 @@
 #language-server = { command = "pyright-langserver", args = ["--stdio"] }
 #config = {}
 
+[[language]]
+name = "php"
+auto-format = false
+language-servers = [ "phpactor", "typescript-language-server", "vscode-html-language-server", "vscode-css-language-server"]
+
+[language-server.phpactor]
+command = "phpactor"
+args = [ "language-server" ]
+
+[[language]]
+name = "javascript"
+auto-format = false
+language-servers = [ "typescript-language-server", "vscode-html-language-server", "vscode-css-language-server"]
+
+[[language]]
+name = "html"
+auto-format = false
+language-servers = [ "typescript-language-server", "vscode-html-language-server", "vscode-css-language-server"]
