@@ -18,7 +18,9 @@ select = "block"
 
 [keys.normal]
 "C-l" = "@<A-.>"
+";" = "@<A-.>"
 "'" = "save_selection"
+"esc" = "collapse_selection"
 
 [editor.indent-guides]
 render = true
