@@ -12,15 +12,15 @@ select = "block"
 
 [keys.insert]
 "C-[" = "normal_mode"
+"C-c" = "normal_mode"
 
 [keys.select]
 "C-[" = "normal_mode"
+"C-c" = "normal_mode"
 
 [keys.normal]
 "C-l" = "@<A-.>"
-";" = "@<A-.>"
 "'" = "save_selection"
-"esc" = "collapse_selection"
 
 [editor.indent-guides]
 render = true
