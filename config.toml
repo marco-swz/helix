@@ -1,4 +1,4 @@
-theme = "kanagawa"
+theme = "kanagawa_custom"
 
 [editor]
 line-number = "relative"
@@ -18,10 +18,16 @@ select = "block"
 [keys.select]
 "C-[" = "normal_mode"
 "C-c" = "normal_mode"
+"C-s" = "split_selection_on_newline"
 
 [keys.normal]
-"C-l" = "@<A-.>"
+"C-n" = "repeat_last_motion"
+"C-p" = "flip_selections"
 "'" = "save_selection"
+
+[keys.normal.space]
+"u" = "switch_to_lowercase"
+"U" = "switch_to_uppercase"
 
 [editor.indent-guides]
 render = true

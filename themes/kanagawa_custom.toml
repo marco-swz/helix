@@ -1,0 +1,2 @@
+inherits = "kanagawa"
+"ui.gutter" = { bg = "#1f1f28" }
