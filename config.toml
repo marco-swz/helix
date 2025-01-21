@@ -28,6 +28,7 @@ select = "block"
 [keys.normal.space]
 "u" = "switch_to_lowercase"
 "U" = "switch_to_uppercase"
+"q" = ":bc"
 
 [editor.indent-guides]
 render = true
