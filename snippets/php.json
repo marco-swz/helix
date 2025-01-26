@@ -1,0 +1,45 @@
+{
+    "@var": {
+        "prefix": ["@v"],
+        "body": ["/** @var $0 */"],
+        "description": "PHPDoc @var"
+    },
+    "@function": {
+        "prefix": ["@f"],
+        "body": [
+            "/**",
+            " * $0",
+            " * @param ${2:type} ${3:name}",
+            " * @return ${1:void}",
+            " */"
+        ],
+        "description": "PHPDoc function"
+    },
+    "foreach": {
+        "prefix": ["fe"],
+        "body": [
+            "foreach (${1:list} as ${2:elem}) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "foreach"
+    },
+    "sql-block": {
+        "prefix": ["<s"],
+        "body": [
+            "<<<SQL",
+            "\t$0",
+            "SQL"
+        ],
+        "description": "Multiline SQL block"
+    },
+    "html-block": {
+        "prefix": ["<h"],
+        "body": [
+            "<<<HTML",
+            "\t$0",
+            "HTML"
+        ],
+        "description": "Multiline HTML block"
+    }
+}

@@ -1,15 +1,23 @@
-#[[language]]
-#name = "python"
-#file-types = ["py", "pyi"]
-#roots = ["pyproject.toml","pyrightconfig.json"]
-#language-server = { command = "pyright-langserver", args = ["--stdio"] }
-#config = {}
+[[language]]
+name = "python"
+file-types = ["py","pyi","py3","pyw",".pythonstartup",".pythonrc"]
+roots = [".", "pyproject.toml", "pyrightconfig.json"]
+language-servers = ["pyright"]
+shebangs = ["python"]
+indent = { tab-width = 4, unit = "    " }
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
+[language-server.pyright.config]
+reportMissingTypeStubs = false
 
 [[language]]
 name = "php"
 auto-format = false
-language-servers = [ "phpactor", "typescript-language-server", "vscode-html-language-server"]
-indent = { tab-width = 4, unit = " " }
+language-servers = [ "phpactor", "typescript-language-server", "vscode-html-language-server", "snippets-ls"]
+indent = { tab-width = 4, unit = "    " }
 
 [language-server.phpactor]
 command = "phpactor"
@@ -18,17 +26,22 @@ args = [ "language-server" ]
 [[language]]
 name = "javascript"
 auto-format = false
-language-servers = [ "typescript-language-server", "vscode-html-language-server"]
-indent = { tab-width = 4, unit = " " }
+language-servers = [ "typescript-language-server", "vscode-html-language-server", "snippets-ls"]
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "html"
 auto-format = false
-language-servers = [ "typescript-language-server", "vscode-html-language-server"]
-indent = { tab-width = 4, unit = " " }
+language-servers = [ "typescript-language-server", "vscode-html-language-server", "snippets-ls"]
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "css"
 auto-format = false
-language-servers = [ "vscode-css-language-server"]
-indent = { tab-width = 4, unit = " " }
+language-servers = [ "vscode-css-language-server", "snippets-ls"]
+indent = { tab-width = 4, unit = "    " }
+
+[language-server.snippets-ls]
+command = "snippets-ls"
+args = ["-config", "~/.config/helix/snippets/package.json"]
+indent = { tab-width = 4, unit = "    " }
