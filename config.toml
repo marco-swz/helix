@@ -30,6 +30,10 @@ select = "block"
 "U" = "switch_to_uppercase"
 "q" = ":bc"
 
+# Minor mode for snippets
+[keys.normal."+"]
+d = "@idate '+%Y-%m-%d %H:%M:%S'<esc>vBBFd:pipe sh<ret>"
+
 [editor.indent-guides]
 render = true
 indent-style = 4
