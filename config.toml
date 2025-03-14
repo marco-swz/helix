@@ -5,11 +5,26 @@ line-number = "relative"
 mouse = true
 bufferline = "multiple"
 true-color = true
+completion-replace = true
+preview-completion-insert = false
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "block"
+
+[editor.indent-guides]
+render = true
+indent-style = 4
+
+[editor.file-picker]
+hidden = false
+
+[editor.whitespace.render]
+tab = "all"
+
+[editor.lsp]
+display-progress-messages = true
 
 [keys.insert]
 "C-[" = "normal_mode"
@@ -18,12 +33,13 @@ select = "block"
 [keys.select]
 "C-[" = "normal_mode"
 "C-c" = "normal_mode"
-"C-s" = "split_selection_on_newline"
+"C-v" = "split_selection_on_newline"
+"V" = "shrink_to_line_bounds"
 
 [keys.normal]
 "C-n" = "repeat_last_motion"
 "C-p" = "flip_selections"
-"'" = "save_selection"
+"C-v" = "split_selection_on_newline"
 
 [keys.normal.space]
 "u" = "switch_to_lowercase"
@@ -34,10 +50,4 @@ select = "block"
 [keys.normal."+"]
 d = "@idate '+%Y-%m-%d %H:%M:%S'<esc>vBBFd:pipe sh<ret>"
 
-[editor.indent-guides]
-render = true
-indent-style = 4
-
-[editor.file-picker]
-hidden = false
 
