@@ -41,6 +41,10 @@ display-progress-messages = true
 "C-p" = "flip_selections"
 "C-v" = "split_selection_on_newline"
 
+[keys.select.space]
+"u" = "switch_to_lowercase"
+"U" = "switch_to_uppercase"
+
 [keys.normal.space]
 "u" = "switch_to_lowercase"
 "U" = "switch_to_uppercase"
@@ -49,5 +53,3 @@ display-progress-messages = true
 # Minor mode for snippets
 [keys.normal."+"]
 d = "@idate '+%Y-%m-%d %H:%M:%S'<esc>vBBFd:pipe sh<ret>"
-
-
