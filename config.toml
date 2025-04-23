@@ -53,3 +53,6 @@ display-progress-messages = true
 # Minor mode for snippets
 [keys.normal."+"]
 d = "@idate '+%Y-%m-%d %H:%M:%S'<esc>vBBFd:pipe sh<ret>"
+t = "@i/** @type {} */<esc>F};i"
+v = "@i/** @var  */<esc>hhhi"
+f = "@i/**<ret> *<ret> */<esc>ki "
