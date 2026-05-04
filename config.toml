@@ -40,6 +40,12 @@ display-progress-messages = true
 "C-n" = "repeat_last_motion"
 "C-p" = "flip_selections"
 "C-v" = "split_selection_on_newline"
+"C-s" = [
+  ":write",
+  ":run-shell-command sh -c 'dir=$(dirname \"%{buffer_name}\"); base=$(basename \"%{buffer_name}\" .scss); sass \"%{buffer_name}\" \"$dir/css/$base.css\"'"
+]
+"'" = "save_selection"
+"s" = "goto_word"
 
 [keys.select.space]
 "u" = "switch_to_lowercase"
@@ -55,4 +61,4 @@ display-progress-messages = true
 d = "@idate '+%Y-%m-%d %H:%M:%S'<esc>vBBFd:pipe sh<ret>"
 t = "@i/** @type {} */<esc>F};i"
 v = "@i/** @var  */<esc>hhhi"
-f = "@i/**<ret> *<ret> */<esc>ki "
+f = "@i/**<ret> *<ret>*/<esc>ki "
