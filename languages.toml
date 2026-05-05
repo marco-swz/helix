@@ -16,7 +16,7 @@ reportMissingTypeStubs = false
 [[language]]
 name = "php"
 auto-format = false
-language-servers = [ "intelephense", "typescript-language-server", "vscode-html-language-server", "snippets-ls"]
+language-servers = [ "scls", "intelephense" ] #, "typescript-language-server", "vscode-html-language-server"]
 indent = { tab-width = 4, unit = "    " }
 
 [language-server.intelephense.config]
@@ -44,22 +44,29 @@ diagnostics = { relaxedTypeCheck = false, undefinedConstants = false, noMixedTyp
 [[language]]
 name = "javascript"
 auto-format = false
-language-servers = [ "typescript-language-server", "vscode-html-language-server", "snippets-ls"]
+language-servers = [ "scls", "typescript-language-server" ]
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "html"
 auto-format = false
-language-servers = [ "typescript-language-server", "vscode-html-language-server", "snippets-ls"]
+language-servers = [ "scls", "typescript-language-server", "vscode-html-language-server" ]
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "css"
 auto-format = false
-language-servers = [ "vscode-css-language-server", "snippets-ls"]
+language-servers = [ "scls", "vscode-css-language-server" ]
 indent = { tab-width = 4, unit = "    " }
 
-[language-server.snippets-ls]
-command = "snippets-ls"
-args = ["-config", "~/.config/helix/snippets/package.json"]
-indent = { tab-width = 4, unit = "    " }
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[language-server.scls.config]
+feature_words = true
+feature_snippets = true
+snippets_first = true
+snippets_inline_by_word_tail = false
+feature_unicode_input = false
+feature_paths = false
+feature_citations = false
