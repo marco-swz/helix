@@ -59,6 +59,11 @@ auto-format = false
 language-servers = [ "scls", "vscode-css-language-server" ]
 indent = { tab-width = 4, unit = "    " }
 
+[language-server.typescript-language-server]
+command = "vtsls"
+args = ["--stdio"]
+config.hostInfo = "helix"
+
 [language-server.scls]
 command = "simple-completion-language-server"
 
