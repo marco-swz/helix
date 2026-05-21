@@ -19,9 +19,9 @@ auto-format = false
 language-servers = [ "scls", "intelephense" ] #, "typescript-language-server", "vscode-html-language-server"]
 indent = { tab-width = 4, unit = "    " }
 
-[language-server.intelephense.config]
+[language-server.intelephense.config.intelephense]
 environment = { phpVersion = "8.3.0" }
-format = { braces = "k&r" }
+format.braces = "k&r"
 telemetry = { enabled = false }
 diagnostics = { relaxedTypeCheck = false, undefinedConstants = false, noMixedTypeCheck = false }
 # stubs = [
